@@ -5,16 +5,22 @@ function Navbar() {
     return (
         <div className="navbar">
             <h2 className="navbar__title">Page Test</h2>
-            <div className="navbar__nav">
-                <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>product</li>
-                    <li>contact</li>
-                </ul>
-            </div>
+            <ul className="navbar__nav">
+                <li>
+                    <b>home</b>
+                </li>
+                <li>
+                    <b>about</b>
+                </li>
+                <li>
+                    <b>product</b>
+                </li>
+                <li>
+                    <b>contact</b>
+                </li>
+            </ul>
         </div>
-    )
+    );
 }
 
 export default Navbar
