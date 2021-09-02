@@ -13,9 +13,9 @@ function Content() {
            
                 <div key={item.id} className="card">
                     <img src={item.img} alt={item.title} />
-                    <div class="card-content">
+                    <div className="card-content">
                         <h1>{item.title}</h1>
-                        <p class="price">$ {item.Price}</p>
+                        <p className="price">$ {item.Price}</p>
                         <p>{item.description}</p>
                     </div>
                     <button>Details</button>

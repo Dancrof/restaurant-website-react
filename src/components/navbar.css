@@ -1,31 +1,38 @@
-.navbar{
+.icon_menu{
     display: flex;
+}
+.icon_menu .icon{
+    display: none;
+}
+
+.menu_nav Button{
+    margin: 0 0.5rem;
+    color: #57392a;
+}
+
+.menu_nav Button:hover{
+    background: #54b65c;
+    color: #fff;
+}
+
+.nav{
+    background: #80ED99;
     justify-content: space-between;
-    padding: 0 2rem;
+    flex-wrap: wrap;
 }
 
-.navbar__title{
-    margin: 0;
-    line-height: 50px;
-    
+.nav .title{
+    color: #57392a;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
 }
-
-.navbar__nav {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav .menu_option{
     list-style: none;
-    
-}
-.navbar__nav li{
-    padding: 0 1rem;
-    line-height: 50px;
-    font-size: 1.04rem;
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
+    display: flex;
 }
 
-.navbar__nav li:hover{
- background: #000;
- color: #fff;    
+.nav .menu_option li {
+    color: #57392a;
+    font-size: 1rem;
 }

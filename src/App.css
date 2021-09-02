@@ -1,9 +1,7 @@
 .App{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 53px 608px 1fr 100px;
-    padding: 0 0.4rem;
-}
-.App .banner{
-    grid-row: 2/3;
+    grid-template-rows: repeat(4, max-content);
+    margin: 0 auto;
+    overflow: hidden;
 }
