@@ -116,11 +116,11 @@ const Slide = styled.div`
 	overflow: hidden;
 	transition: .3s ease all;
 	z-index: 10;
-	/* max-height: 590px; */
+	max-height: 500px;
 	position: relative;
 	img {
 		width: 100%;
-		height: 60vh;
+		height: 90%;
 		vertical-align: top;
 	}
 `;

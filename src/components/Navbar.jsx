@@ -14,7 +14,6 @@ import Button from '@material-ui/core/Button';
 
 import Slide from '@material-ui/core/Slide';
 
-import logo from '../img/navbar/logo.png';
 import { ThemeProvider } from 'styled-components';
 
 

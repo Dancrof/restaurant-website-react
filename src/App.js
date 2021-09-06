@@ -20,7 +20,8 @@ function App() {
       <ThemeProvider theme={themeGlobal}>
       <Navbar />
       </ThemeProvider>
-      <Slideshow controles={true}>
+      
+	  <Slideshow controles={true}>
 				<Slide>
 					<a href="https://www.falconmaters.com">
 						<img src={banner1} alt=""/>
@@ -46,7 +47,7 @@ function App() {
 					</TextoSlide>
 				</Slide>
 			</Slideshow>
-      <Content />
+		<Content />
       <Footer />
     </div>
   );

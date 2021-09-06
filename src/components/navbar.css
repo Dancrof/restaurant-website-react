@@ -1,3 +1,4 @@
+
 .icon_menu{
     display: flex;
 }
@@ -19,6 +20,9 @@
     background: #80ED99;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 7px 7px 7px;
 }
 
 .nav .title{
@@ -35,4 +39,11 @@
 .nav .menu_option li {
     color: #57392a;
     font-size: 1rem;
+}
+
+/*Media querys*/
+@media (max-width:699px) {
+    .nav{
+        width: 100%;
+    }
 }

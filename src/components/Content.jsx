@@ -1,27 +1,46 @@
-import React, { useState } from 'react'
-import './content.css'
-import ProductJson from '../services/content.json';
+import React from 'react';
+import './content.css';
+
+import banner1 from '../img/banner/banner.jpg'
+import banner2 from '../img/banner/banner2.jpg'
+import banner3 from '../img/banner/banner3.png'
 
 function Content() {
-    
-    const getProduct = ProductJson.product;
-    const [produt, setProduct] = useState(getProduct);
-    
     return (
         <div className="content">
-            {produt.map(item => (
-           
-                <div key={item.id} className="card">
-                    <img src={item.img} alt={item.title} />
-                    <div className="card-content">
-                        <h1>{item.title}</h1>
-                        <p className="price">$ {item.Price}</p>
-                        <p>{item.description}</p>
-                    </div>
-                    <button>Details</button>
+            <div className="info">
+                <img src={banner1} alt="" />
+                <div className="breakfast">
+                    <h3 className="info__title">breakfast</h3>
+                    <p className="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum optio voluptatum deleniti molestiae facilis impedit quam doloribus repellat, velit eveniet inventore atque laborum neque consequuntur commodi iusto quae laudantium?
+                    Iure, fuga corrupti? Ipsam quibusdam placeat modi consequuntur delectus commodi amet? Cum odio ipsam natus ullam blanditiis sapiente, quod ad culpa eligendi, similique cupiditate molestias facilis cumque dolor quos nemo!
+                    </p>
+                    <button className="btn">ver mas</button>
                 </div>
-
-            ))}
+            </div>
+            <div className="info">
+                <img src={banner2} alt="" />
+                <div className="lunch">
+                    <h3 className="info_title">Lunch</h3>
+                    <p className="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum optio voluptatum deleniti molestiae facilis impedit quam doloribus repellat, velit eveniet inventore atque laborum neque consequuntur commodi iusto quae laudantium?
+                    Iure, fuga corrupti? Ipsam quibusdam placeat modi consequuntur delectus commodi amet? Cum odio ipsam natus ullam blanditiis sapiente, quod ad culpa eligendi, similique cupiditate molestias facilis cumque dolor quos nemo!
+                    </p>
+                    <button className="btn">ver mas</button>
+                </div>
+            </div>
+            <div className="info">
+            <img src={banner3} alt="" />
+                <div className="diner">
+                    <h3 className="info_title">Diner</h3>
+                    <p className="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum optio voluptatum deleniti molestiae facilis impedit quam doloribus repellat, velit eveniet inventore atque laborum neque consequuntur commodi iusto quae laudantium?
+                    Iure, fuga corrupti? Ipsam quibusdam placeat modi consequuntur delectus commodi amet? Cum odio ipsam natus ullam blanditiis sapiente, quod ad culpa eligendi, similique cupiditate molestias facilis cumque dolor quos nemo!
+                    </p>
+                    <button className="btn">ver mas</button>
+                </div>
+            </div>
         </div>
     );
 }
